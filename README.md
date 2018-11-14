@@ -1,7 +1,7 @@
 # serverless-chaos-monkey
 Serverless Chaos Monkey is a serverless implementation of Netflix Chaos Monkey through AWS Lambdas in Python.
 Present functionality involves two modes of operation:
-1) **ecs** Mode: Allows you to configure chaos monkey to check resiliency of your ecs cluster by randomly terminating any container instance in your cluster. This is highly useful for micro-services based architectures.
+1) **ecs** Mode: Allows you to configure chaos monkey to check resiliency of your ecs cluster by randomly terminating any container instance. This is highly useful for micro-services based architectures.
 2) **autoscaling** Mode: This is conventional chaos monkey implementation that randomly terminate ec2 instances in your autoscaling group. 
 
 # Configuration
