@@ -12,4 +12,10 @@ Provide your configuration details in config.py file.
 
 3)cluster_arn: Arn of ecs cluster (**required** if mode_of_operation= ecs)
 
+# Deployment
+
+**Iam Policies** : Define a role for lambda and attach following policies:
+1) AmazonEC2FullAcess
+2) AmazonECS_FullAccess
+
 
