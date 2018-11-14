@@ -46,6 +46,10 @@ def stop_container():
 #randomly stops ec2 instances in given autoscaling group
 def stop_ec2_instances():
     asg_client = boto3.client('autoscaling')
+
+    if(autoscaling_group_name=='' or autoscaling_group_name==None):
+        return "No Autoscaling group provided"
+
     asg_response = asg_client.describe_auto_scaling_groups(AutoScalingGroupNames=[autoscaling_group_name])
 
     instance_ids = [] # List to hold the instance-ids
