@@ -26,3 +26,5 @@ Provide your configuration details in config.py file.
 **Iam Policies** : Define a role for lambda and attach following policies:
 1) AmazonEC2FullAcess
 2) AmazonECS_FullAccess
+
+Create a lambda deployment package and mention lambda handler name as lambda.lambda_handler while deploying the package.
